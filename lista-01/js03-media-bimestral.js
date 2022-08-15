@@ -26,18 +26,27 @@
  */
 
 // Entrada
-var notas = [10, 8, 9.5, 7, 10]
+var notas = [10, 8, 9.5, 7, 0]
 
 // Altere a expressão abaixo para calcular a média a partir do total de notas
 var media, quantidadeDeNotas
 var total = 0
 
 // Faça um loop para achar o total de notas
+for (var nota of notas){
+    total += nota
+}
 
 // Veja como pegar este valor com base na entrada
-quantidadeDeNotas = 5
-media = 0    // ?
+quantidadeDeNotas = notas.length
+media = total/quantidadeDeNotas    // ?
 
-var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
+if (media >= 7) {
+    resultado = 'Aprovado!!!'
+} else {
+    resultado = 'Reprovado!!!'
+}
+
+var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1) + ' ' +resultado
 
 console.log(resultado)

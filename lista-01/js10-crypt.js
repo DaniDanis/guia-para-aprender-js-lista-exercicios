@@ -31,9 +31,12 @@
 
 // Entrada
 var texto = 'abacate'
+var textoCriptografado = []
 
 // implemente aqui uma lógica para criptografar o texto
 
-var textoCripto = 'bcbdbuf'
-
+for (var letra of texto){    
+    textoCriptografado.push(String.fromCharCode(letra.charCodeAt(0)+1))
+}
+var textoCripto = textoCriptografado.join('')
 console.log(textoCripto)

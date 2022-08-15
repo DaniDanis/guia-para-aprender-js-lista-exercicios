@@ -14,9 +14,15 @@
  */
 
 // Entrada
-var entrada = "J";
+var entrada = "1";
+var entradasValidas = ['S', 'Y', 'SIM', 'YES', '👍', '1']
+entrada = entrada.toUpperCase()
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false;
+if (entradasValidas.includes(entrada)){
+    var resultado = true;
+} else {
+    var resultado = false;
+}
 
 console.log(resultado);

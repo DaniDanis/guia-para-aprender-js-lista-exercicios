@@ -16,10 +16,13 @@
  *   a lógica do programa
  */
 
-var anoNascimento = 2002
+var anoNascimento = 1965
 
 // Tem que pegar o ano atual usando JS e subtrair a var acima
-var idade = 2022 - anoNascimento
+var dataAtual = new Date()
+var anoAtual = dataAtual.getFullYear()
+var idade = anoAtual - anoNascimento
+
 
 var resultado = '👉 Quem nasceu em ' + anoNascimento + ', sua idade é ' + idade
 

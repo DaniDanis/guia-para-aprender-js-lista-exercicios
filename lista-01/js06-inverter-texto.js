@@ -9,8 +9,14 @@
 
 // Entrada
 var entrada = 'abacate'
+entrada = String(entrada)
+var invertido = []
 
 // gere a variável invertido de forma a transforma a entrada na saída esperada
-var invertido = '?'
+for (var letra of entrada) {
+    invertido.unshift(letra)
+}
+
+var invertido = invertido.join('')
 
 console.log(invertido)

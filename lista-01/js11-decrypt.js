@@ -12,9 +12,12 @@
  */
 
 // Entrada
-var texto = "bcbdbuf";
+var texto = "bcbdbuf", textoDecripto = []
 
 // implemente aqui uma lógica para descriptografar o texto
-var textoDecripto = "abacate";
+for (var letra of texto){    
+    textoDecripto.push(String.fromCharCode(letra.charCodeAt(0)-1))
+}
+var textoDecripto = textoDecripto.join('')
 
 console.log(textoDecripto);

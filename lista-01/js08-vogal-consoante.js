@@ -10,9 +10,17 @@
 */
 
 // Entrada
-var entrada = 'a'
+var entrada = '3'
+entrada = entrada.toLocaleLowerCase()
+const vogais = ['a', 'e', 'i', 'o', 'u']
+
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
+var resultado = 'caractere invalido'
+if (vogais.includes(entrada)){
+    resultado = 'vogal'
+} else if (isNaN(entrada)) {
+    resultado = 'consoante'
+}
 
 console.log(resultado)

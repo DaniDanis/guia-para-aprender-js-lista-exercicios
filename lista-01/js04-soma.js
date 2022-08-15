@@ -16,10 +16,20 @@
  */
 
 // Entrada
+var soma = 0
 var n1 = 'A'
-var n2 = 40
+var n2 = 'A'
 
 // Saída
-var resultado = '?'
+if (typeof(n1) == 'number' && typeof(n2) == 'number'){
+    resultado = n1 + n2
+    console.log(resultado)
+} 
+if (typeof(n1) == 'string') {
+    console.log(n1 + ' ' + 'não é um número')
+}
+if (typeof(n2) == 'string') {
+    console.log(n2 + ' ' + 'não é um número')
+}
 
-console.log(resultado)
+
